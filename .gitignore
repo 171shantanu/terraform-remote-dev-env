@@ -10,3 +10,6 @@
 
 #senstive files
 *.tfvars
+
+#gitignore
+*.gitignore

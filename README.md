@@ -1,0 +1,2 @@
+If you are going to use this template to run the TF Scripts. You will need to config the user SSH credentials in the 'ssh-config' file.
+I have not uploaded the terraform providers directory as it was too large in size. Please make sure you are installing the required providers before applying the scripts by running 'terraform init' command.
