@@ -1,7 +1,7 @@
 cat << EOF >> ~/.ssh/config
 
-Host ${hostname}
-  HostName ${hostname}
-  User ${user}
-  IdentityFile ${identityfile}
+Host 
+  HostName 
+  User
+  IdentityFile 
 EOF
