@@ -75,7 +75,7 @@ resource "aws_security_group" "tf_sg" {
 
 resource "aws_key_pair" "tf_auth" {
   key_name   = "tf_key"
-  public_key = file("~/.ssh/tfkey.pub")
+  public_key = "specify-the-public-key-or-path-to-the-public-key"
 }
 
 resource "aws_instance" "dev_node" {
@@ -99,7 +99,7 @@ resource "aws_instance" "dev_node" {
     command = templatefile("mac-ssh-config.tpl" , {
       hostname = self.public_ip,
       user = "ubuntu",
-      identity_file= "~/.ssh/tf.key"
+      identity_file= "specify-path-to-login-key-file"
     })
     interpreter = ["bash", "-c"]
   }
